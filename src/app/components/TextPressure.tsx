@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+const spanRef = useRef<HTMLSpanElement>(null);
+
 
 interface TextPressureProps {
   text?: string;
@@ -232,7 +234,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
         {chars.map((char, i) => (
           <span
             key={i}
-            ref={(el) => (spansRef.current[i] = el)}
+            ref={spanRef}
             data-char={char}
             style={{
               display: "inline-block",
