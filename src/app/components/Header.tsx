@@ -10,7 +10,7 @@ export const Header = () => {
         <h2 className="text-neutral-500 my-1 font-mono text-[.9rem]">
           @alvidi.farrel
         </h2>
-        <p className="text-neutral-500 mt-5 font-mono  text-justify text-base">"Appreciate every moment before it becomes a memory."</p>
+        <p className="text-neutral-500 mt-5 font-mono  text-justify text-base">&quot;Appreciate every moment before it becomes a memory.&quot;</p>
       </div>
  
     </div>
