@@ -1,16 +1,18 @@
 "use client";
 import { cn } from "@/app/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import Image from "next/image";
+import  Image  from "next/image";
+import type { StaticImageData } from 'next/image';
 
 import { useState } from "react";
+
 
 export const HoverEffect = ({
   items,
   className,
 }: {
   items: {
-    logo: string;
+    logo: string | StaticImageData;
     title: string;
     description: string;
     link: string;
