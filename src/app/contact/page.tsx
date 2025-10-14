@@ -75,7 +75,6 @@ const ContactPage = () => {
             <textarea
               placeholder="Hi there! I would like to get in touch with you to inquiry about a project."
               className="bg-transparent border-b border-gray-300 pb-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-gray-900 transition-colors resize-none"
-              rows="4"
               required
             />
           </div>
