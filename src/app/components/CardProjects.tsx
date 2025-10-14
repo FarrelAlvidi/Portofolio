@@ -1,8 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import { Github, ExternalLink, Code2 } from "lucide-react";
+interface CardProjectsProps {
+  img: string;
+  title: string;
+  desc: string;
+  link: string;
+}
 
-const CardProjects = ({ img, title, desc, link }) => {
+const CardProjects: React.FC<CardProjectsProps> = ({ img, title, desc, link }) => {
   return (
     <div className="bg-white border hover:p-1  border-transparent hover:border-gray-400  transition-all duration-300 rounded-xl shadow-sm overflow-hidden max-w-sm">
       {/* Header */}
