@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import { NavBar } from "./components/NavBar";
 
 const outfit = Outfit({
   weight: ["400", "500", "600", "700"],
@@ -19,15 +20,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${outfit.className} ${ovo.className} antialiased`}
-      >
-        {children}
+      <body className={`${outfit.className} ${ovo.className} bg-[#FBFBFB] antialiased`}>
+        <NavBar />
+        <div className="transition-all max-w-4xl mx-auto px-6 lg:px-12 py-10 pb-20 min-h-screen">
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -35,7 +35,7 @@ const tools = [
 const Tools = () => {
   return (
     <div className="">
-      <h2 className="text-black font-mono text-[1.1rem]">Featured Tools</h2>
+      <h2 className="text-black font-mono text-[1.6rem]">Featured Tools</h2>
       <HoverEffect items={tools} />
     </div>
   );
