@@ -2,8 +2,9 @@ import React from "react";
 import reactLogo from "@/../public/assets/react_original_logo_icon_146374.png";
 import tailwindLogo from "@/../public/assets/file_type_tailwind_icon_130128 (1).png";
 import laravelLogo from "@/../public/assets/laravel-logo.png";
-import Image from "next/image";
+import htmlLogo from "@/../public/assets/html-logo.webp";
 import CardProjects from "../components/CardProjects";
+import netflixPic from "@/../public/assets/netflix.png";
 
 const ProjectsPage = () => {
   const projects = [
@@ -30,6 +31,7 @@ const ProjectsPage = () => {
       title: "Netflix Frontpage",
       desc: "Iseng buat.",
       link: "https://nadinegallery.netlify.app/",
+      pic: netflixPic,
     },
     {
       logo: reactLogo,
@@ -43,6 +45,30 @@ const ProjectsPage = () => {
       desc: "Desain halaman landing page yang menarik untuk sebuah hotel.",
       link: "https://github.com/FarrelAlvidi/Sertikom-2024-Pemesanan-Hotel",
     },
+    {
+      logo: htmlLogo,
+      title: "Finance Web App",
+      desc: "Aplikasi web untuk mengelola keuangan pribadi dengan fitur pencatatan pemasukan dan pengeluaran.",
+      link: "https://farrelalvidi.github.io/Finance-Web/"
+    },
+    {
+      logo: laravelLogo,
+      title: "Pengaduan Siswa",
+      desc: "Sistem pengaduan siswa berbasis web yang memungkinkan siswa untuk menyampaikan keluhan atau masukan secara efektif.",  
+      link: "https://github.com/FarrelAlvidi/PengaduanSiswa"
+    },
+    {
+      logo: tailwindLogo,
+      title: "Pesat Discovery Day",
+      desc: "Situs web untuk acara Pesat Discovery Day, menampilkan portofolio siswa",
+      link: "https://pesat-discovery-day.vercel.app/"
+    },
+    {
+      logo: htmlLogo,
+      title: "Travel Website",
+      desc: "Situs web perjalanan yang menampilkan berbagai destinasi wisata menarik beserta informasi lengkapnya.",
+      link: "https://farrelalvidi.github.io/Travel-Website/"
+    }
   ];
   return (
     <div className="py-10 px-4  sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -59,7 +85,7 @@ const ProjectsPage = () => {
           {projects.map((project, index) => (
             <CardProjects
               key={index}
-              img={project.logo}
+              img={project.logo.src}
               title={project.title}
               desc={project.desc}
               link={project.link}

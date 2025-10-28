@@ -32,7 +32,7 @@ const AboutPage = () => {
               Rekayasa Perangkat Lunak dan saya berkompetensi pada bidang
               jurusan ini.
             </p>
-            <a href="/about" className="font-mono flex gap-2 items-center mt-5">More About Me <ArrowUpRight className="h-4 w-4" /></a>
+            <a href="/assets/CV_Farrel.pdf" download="CV_FarrelAlvidi.pdf" className="font-mono flex gap-2 items-center mt-5">Download CV <ArrowUpRight className="h-4 w-4" /></a>
           </div>
           <div className="lg:w-1/3">
             <h2 className="text-black font-mono text-[1.3rem]">Education</h2>
